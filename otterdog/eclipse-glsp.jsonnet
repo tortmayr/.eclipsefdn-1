@@ -16,7 +16,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     orgs.newRepo('glsp') {
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+     delete_branch_on_merge: true,
       description: "Graphical language server platform for building web-based diagram editors",
       has_discussions: true,
       has_wiki: false,
@@ -53,7 +53,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     orgs.newRepo('glsp-client') {
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+     delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Web-based client framework of the graphical language server platform",
       has_wiki: false,
@@ -82,7 +82,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     orgs.newRepo('glsp-eclipse-integration') {
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+     delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       description: "Integration of the web-based GLSP client with Eclipse",
       has_wiki: false,
@@ -107,7 +107,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     orgs.newRepo('glsp-examples') {
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+     delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Example diagram editors built with Eclipse GLSP",
       gh_pages_build_type: "legacy",
@@ -146,7 +146,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     orgs.newRepo('glsp-playwright') {
       allow_merge_commit: true,
       allow_update_branch: false,
-      delete_branch_on_merge: false,
+     delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       description: "End-to-end testing library for Eclipse GLSP diagrams",
       homepage: "https://www.eclipse.dev/glsp",
@@ -175,7 +175,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     orgs.newRepo('glsp-server') {
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+     delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Java-based server framework of the graphical language server platform",
       has_wiki: false,
@@ -204,7 +204,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     },
     orgs.newRepo('glsp-server-node') {
       allow_update_branch: false,
-      delete_branch_on_merge: false,
+     delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       description: "Node-based server framework of the graphical language server platform",
       gh_pages_build_type: "legacy",
@@ -244,7 +244,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+     delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Integration of the web-based GLSP client with Eclipse Theia",
       homepage: "https://www.eclipse.dev/glsp",
@@ -272,7 +272,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
     orgs.newRepo('glsp-vscode-integration') {
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+     delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       description: "Integration of the web-based GLSP client with VSCode",
       homepage: "https://www.eclipse.dev/glsp",
@@ -300,7 +300,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+     delete_branch_on_merge: true,
       dependabot_alerts_enabled: false,
       web_commit_signoff_required: false,
       workflows+: {
@@ -316,7 +316,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
-      delete_branch_on_merge: false,
+     delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "The website for GLSP",
       homepage: "https://www.eclipse.dev/glsp",
