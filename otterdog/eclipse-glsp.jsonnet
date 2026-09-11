@@ -79,6 +79,9 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
       description: "Core framework (web-based client and TypeScript/Node server) of the graphical language server platform",
+      gh_pages_build_type: "legacy",
+      gh_pages_source_branch: "gh-pages",
+      gh_pages_source_path: "/",
       has_wiki: false,
       homepage: "https://www.eclipse.dev/glsp",
       topics+: [
@@ -102,7 +105,14 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
           required_approving_review_count: 0,
-          requires_pull_request: false,
+        },
+      ],
+      environments: [
+        orgs.newEnvironment('github-pages') {
+          branch_policies+: [
+            "gh-pages"
+          ],
+          deployment_branch_policy: "selected",
         },
       ],
     },
