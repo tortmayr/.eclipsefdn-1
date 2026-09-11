@@ -75,6 +75,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       ],
     },
     orgs.newRepo('glsp-core') {
+      allow_merge_commit: true,
       allow_update_branch: false,
       delete_branch_on_merge: true,
       dependabot_security_updates_enabled: true,
@@ -104,7 +105,7 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       },
       branch_protection_rules: [
         orgs.newBranchProtectionRule('main') {
-          required_approving_review_count: 0,
+          required_approving_review_count: 1,
         },
       ],
       environments: [
