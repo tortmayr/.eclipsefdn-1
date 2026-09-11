@@ -120,7 +120,6 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       ],
     },
     orgs.newRepo('glsp-core') {
-      allow_merge_commit: true,
       allow_update_branch: false,
       dependabot_security_updates_enabled: true,
       description: "Core framework (web-based client and TypeScript/Node server) of the graphical language server platform",
@@ -224,7 +223,6 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       ],
     },
     orgs.newRepo('glsp-playwright') {
-      allow_merge_commit: true,
       allow_update_branch: false,
       dependabot_alerts_enabled: false,
       description: "End-to-end testing library for Eclipse GLSP diagrams",
@@ -398,7 +396,6 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       ],
     },
     orgs.newRepo('glsp-website') {
-      allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
       dependabot_alerts_enabled: false,
@@ -413,7 +410,6 @@ orgs.newOrg('ecd.glsp', 'eclipse-glsp') {
       ],
     },
     orgs.newRepo('glsp-website-source') {
-      allow_merge_commit: true,
       allow_update_branch: false,
       default_branch: "master",
       dependabot_security_updates_enabled: true,
